@@ -1,0 +1,72 @@
+body {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  background-color: #222;
+  color: white;
+  letter-spacing: 2.3px;
+}
+
+.titleArea {
+  font-size: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #e6dede;
+}
+
+.timeLeft {
+  color: white;
+}
+
+.game {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  gap: 50px;
+  justify-content: center;
+  margin: auto;
+  cursor: url(hammer.png);
+}
+
+.hole {
+  width: 100px;
+  height: 100px;
+  padding: 10px;
+  border: 3px solid #4b4a4a;
+  border-radius: 50%;
+  background-color: #000000;
+  position: relative;
+  cursor: url(hammer.png);
+}
+
+.hole:after {
+  content: "";
+  display: block;
+  background-color: rgb(253, 0, 194);
+  width: 60%;
+  height: 60%;
+  position: absolute;
+  left: 20%;
+  top: 20%;
+  border-radius: 50%;
+  visibility: hidden;
+}
+
+.hammer {
+  cursor: url("hammer.png"), auto;
+}
+
+.mole {
+  width: 60%;
+  height: 60%;
+  position: absolute;
+  left: 20%;
+  top: 20%;
+  border-radius: 50%;
+  background-color: brown;
+  visibility: hidden;
+}
+
+.mole {
+  background-image: url("mole.png");
+  background-size: cover;
+}
